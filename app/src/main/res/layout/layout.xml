@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/arizonia"
+        android:text="BMI Calculator"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/etAgeValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#E6DEDE"
+        android:ems="10"
+        android:hint="Age:"
+        android:inputType="numberDecimal"
+        android:textColorHint="#908C8C" />
+
+    <EditText
+        android:id="@+id/etHeightValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#E6DEDE"
+        android:ems="10"
+        android:hint="Height (cm):"
+        android:inputType="numberDecimal"
+        android:textColorHint="#908C8C" />
+
+    <EditText
+        android:id="@+id/etWeightValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#E6DEDE"
+        android:ems="10"
+        android:hint="Weight (Kg):"
+        android:inputType="numberDecimal"
+        android:textColorHint="#908C8C" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ED0A0AF2"
+        android:text="Calculate BMI"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="277dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#B34B4B"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#040404" />
+
+    <Button
+        android:id="@+id/buttonClearHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ED0A0AF2"
+        android:text="Clear History"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
